@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Iris Flower Application</title>
+    <style>
+        .custom-heading {
+            color: #5a5a5a; /* A soft, neutral color for the heading */
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="custom-heading">Welcome To Iris Flower Application</h1>
+        <hr>
+    </div>
+    <form class="container mt-4" action="{% url 'Info' %}" method="GET">
+        <div class="row mb-3 justify-content-center">
+            <div class="col-md-2">
+                <label for="s_len" class="form-label">Sepal Length</label>
+                <input type="number" class="form-control" name="Slength" id="s_len" required>
+            </div>
+            <div class="col-md-2">
+                <label for="s_width" class="form-label">Sepal Width</label>
+                <input type="number" class="form-control" name="Swidth" id="s_width" required>
+            </div>
+        </div>
+        <div class="row mb-3 justify-content-center">
+            <div class="col-md-2">
+                <label for="p_len" class="form-label">Petal Length</label>
+                <input type="number" class="form-control" name="Plength" id="p_len" required>
+            </div>
+            <div class="col-md-2">
+                <label for="p_width" class="form-label">Petal Width</label>
+                <input type="number" class="form-control" name="Pwidth" id="p_width" required>
+            </div>
+        </div>
+        <div class="row mb-3 justify-content-center">
+            <div class="col-md-2 text-center">
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </div>
+        </div>
+    </form>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
